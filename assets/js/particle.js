@@ -129,9 +129,10 @@ if (allElements.length > 0) {
         });
 
         let spans = txtElement.childNodes;
-
+        // 判斷中英文
+        const isChiness = spans.length <= 4;
         // It sets the interval between each letter showing
-        const letterInterval = setInterval(activeLetter, 70);
+        const letterInterval = setInterval(activeLetter, 70+isChiness*70);
 
         function activeLetter() {
           spans[count].classList.add("active");
@@ -143,13 +144,13 @@ if (allElements.length > 0) {
             // It waits 4 seconds to start erasing the word
             setTimeout(() => {
               eraseText();
-            }, 600);
+            }, 1000);
           }
         }
 
         function eraseText() {
           // It sets the interval between each letter hiding
-          let removeInterval = setInterval(removeLetter, 40);
+          let removeInterval = setInterval(removeLetter, 40+isChiness*40);
           count--;
 
           function removeLetter() {
