@@ -5,26 +5,41 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Software Development Intern",
-    cardImage: "assets/images/experience-page/flipkart.jpg",
-    place: "Flipkart",
-    time: "(May, 2020 - present)",
-    desp: "<li>Worked to migrate Flipkart lite’s product page to AMP pages so that they load up instantly.</li> <li>Made changes in the current progressive web app of Flipkart to react to different actions performed on AMP page.</li> <li>Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.</li>",
+    title: "迪斯中學",
+    cardImage: "assets/images/experience-page/DHS.png",
+    place: "文書組-組長 / 資訊組-成員",
+    time: "(June, 2025 - Now)",
+    desp: `提供輕鬆有趣的學習偏方，專注考試快速記憶，不重內涵！<br>
+    「Dis」帶有顛覆意味，為不抱期許的你提供另一種視角。<br>
+    DisHighSchool 致力於分享輕鬆有趣、實用重點的考試策略。<br>
+    與主打激發學習熱情的平台不同，我們專注於打造高效記憶法。（輕鬆幽默，歡迎你一起享受學習)<br>
+    ➡️ YouTube ➜ <a href="https://www.youtube.com/@DisHighSchool" target="_blank">https://www.youtube.com/@DisHighSchool</a>
+    `,
   },
   {
-    title: "Student Developer",
-    cardImage: "assets/images/experience-page/gsoc.png",
-    place: "Google Summer Of Code",
-    time: "(Mar - Aug, 2019)",
-    desp: "<li>Worked with MOZILLA as a part of Google Summer Of Code.</li><li>Worked on Extension Activity Monitor which is a privileged extension for Firefox that uses the activityLog API (privileged API) to monitor the activities of the other installed extensions.</li><li>The activityLog API listens for logs from other installed extensions.</li>",
-  },
+    title: "凱燁伺服器",
+    cardImage: "assets/images/experience-page/Kaiye.jpg",
+    place: "工程師",
+    time: "(Aug, 2023 - Now)",
+    desp: `🔥｜全新冒險開啟 ● 生存不止於生存！<br>
+歡迎來到 ✨凱燁伺服器✨<br>
+這裡是原味與冒險交織的世界，一切從零開始，但絕不平凡。<br>
+
+👥｜和夥伴一起探索、打造、征服這片土地！<br>
+➡️ Discord ➜ <a href="https://discord.gg/mckaiye.net" target="_blank">https://discord.gg/mckaiye.net</a><br>
+➡️ 伺服器 IP ➜ <a href="mckaiye.net" target="_blank">mckaiye.net</a><br>`
+},
   {
-    title: "Research Intern",
-    cardImage: "assets/images/experience-page/IIT_Bombay.jpg",
-    place: "IIT, Bombay",
-    time: "(Dec, 19 - Jan, 20)",
-    desp: "<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
-  },
+    title: "真物伺服器",
+    cardImage: "assets/images/experience-page/real.jpg",
+    place: "工程師",
+    time: "(Aug, 2024 - Now)",
+    desp: `真物伺服器致力於豐富的Minecraft生存體驗<br>
+最佳化伺服器效能，特殊附魔書，特殊裝飾品<br>
+只為了讓玩家能夠和朋友一起體驗未曾有過的Minecraft體驗<br>
+➡️ Discord ➜ <a href="https://discord.gg/JHynkw6Zeh" target="_blank">https://discord.gg/JHynkw6Zeh</a><br>
+➡️ 伺服器 IP ➜ <a href="MC.SeekRealThing.net" target="_blank">MC.SeekRealThing.net</a><br>
+` },
 ];
 
 const showCards2 = () => {
