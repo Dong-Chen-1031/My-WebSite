@@ -134,6 +134,8 @@ section > div {
 
 .card1 {
   background-color: var(--bg1-color);
+  transition: transform 0.4s, 0.4s box-shadow;
+
   display: flex;
   flex-direction: column;
   max-height: 80%;
