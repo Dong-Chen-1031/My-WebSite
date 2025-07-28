@@ -26,7 +26,7 @@ const exp = [
 這裡是原味與冒險交織的世界，一切從零開始，但絕不平凡。<br>
 
 👥｜和夥伴一起探索、打造、征服這片土地！<br>
-➡️ Discord ➜ <a href="https://discord.gg/mckaiye.net" target="_blank">https://discord.gg/mckaiye.net</a><br>
+➡️ Discord ➜ <a href="https://discord.gg/EC92rzjFuK" target="_blank">https://discord.gg/EC92rzjFuK</a><br>
 ➡️ 伺服器 IP ➜ <a href="mckaiye.net" target="_blank">mckaiye.net</a><br>`
 },
   {
