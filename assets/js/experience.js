@@ -1,5 +1,27 @@
 AOS.init();
 
+// Copy to clipboard function
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(function() {
+    // 顯示複製成功的提示
+    alert('已複製到剪貼簿: ' + text);
+  }, function(err) {
+    // 如果現代 API 失敗，使用舊方法
+    const textArea = document.createElement("textarea");
+    textArea.value = text;
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    try {
+      document.execCommand('copy');
+      alert('已複製到剪貼簿: ' + text);
+    } catch (err) {
+      alert('複製失敗，請手動複製: ' + text);
+    }
+    document.body.removeChild(textArea);
+  });
+}
+
 //  Work experience cards
 
 const experiencecards = document.querySelector(".experience-cards");
@@ -27,7 +49,7 @@ const exp = [
 
 👥｜和夥伴一起探索、打造、征服這片土地！<br>
 ➡️ Discord ➜ <a href="https://discord.gg/EC92rzjFuK" target="_blank">https://discord.gg/EC92rzjFuK</a><br>
-➡️ 伺服器 IP ➜ <a href="mckaiye.net" target="_blank">mckaiye.net</a><br>`
+➡️ 伺服器 IP ➜ <a href="#" onclick="copyToClipboard('mckaiye.net'); return false;" style="cursor: pointer;">mckaiye.net</a><br>`
 },
   {
     title: "真物伺服器",
@@ -38,7 +60,7 @@ const exp = [
 最佳化伺服器效能，特殊附魔書，特殊裝飾品<br>
 只為了讓玩家能夠和朋友一起體驗未曾有過的Minecraft體驗<br>
 ➡️ Discord ➜ <a href="https://discord.gg/JHynkw6Zeh" target="_blank">https://discord.gg/JHynkw6Zeh</a><br>
-➡️ 伺服器 IP ➜ <a href="MC.SeekRealThing.net" target="_blank">MC.SeekRealThing.net</a><br>
+➡️ 伺服器 IP ➜ <a href="#" onclick="copyToClipboard('MC.SeekRealThing.net'); return false;" style="cursor: pointer;">MC.SeekRealThing.net</a><br>
 ` },
 ];
 
