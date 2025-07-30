@@ -366,17 +366,17 @@ $(function submitAnimation() {
 
     // Check if the name field is empty or contains a number
     if (name.value == "" || (/\d/.test(name.value))) {
-      swal("Error !","Please enter a valid name !","error");
+      swal("錯誤！","請輸入有效的姓名！","error");
       return;
     }
     // Check if the email field is empty or email is not valid ex: test@@email.com
     else if (emailAdress.value == "" || !(emailPattern.test(emailAdress.value))) {
-      swal("Error !","Please enter a valid email !","error");
+      swal("錯誤！","請輸入有效的電子郵件！","error");
       return;
     }
     // Check if the message field is empty
     else if (text.value == "") {
-      swal("Error !","Please enter a valid message !","error");
+      swal("錯誤！","請輸入有效的訊息！","error");
       return;
     }
     else {
