@@ -6,6 +6,22 @@ const projectcards = document.querySelector(".projectcards");
 // Array of object for projects
 const projects = [
   {
+    title: "2GifBot",
+    cardImage: "assets/images/project-page/2GIF.png",
+    description: "一個專門用於將圖片轉換為 GIF 格式的 Discord 機器人，採用右鍵選單設計，支援全域使用和私人訊息。方便使用者將圖片加入最愛選單。",
+    tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+    Previewlink: "https://discord.com/oauth2/authorize?client_id=1375013750305853440",
+    Githublink: "https://github.com/Dong-Chen-1031/2GifBot",
+  },
+  {
+    title: "DC Read",
+    cardImage: "assets/images/project-page/read.png",
+    description: "一個結合 Discord Bot 和 Web 伺服器的已讀回執測試系統，用於檢測 Discord 私訊是否被查看。",
+    tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+    Previewlink: "https://discord.com/oauth2/authorize?client_id=1402571906594508820",
+    Githublink: "https://github.com/Dong-Chen-1031/DcRead",
+  },
+  {
     title: "Python Programming Auto Tester",
     cardImage: "assets/images/project-page/Tester.png",
     description: "一個簡單的 Python 程式自動化測試系統，可適用於日常程式解題、演算法學習、程式練習等。",
@@ -21,14 +37,6 @@ const projects = [
     Previewlink: "",
     Githublink: "https://github.com/Dong-Chen-1031/Discord.py-Cogs-Bot-Template",
   },  
-  {
-    title: "2GifBot",
-    cardImage: "assets/images/project-page/2GIF.png",
-    description: "一個專門用於將圖片轉換為 GIF 格式的 Discord 機器人，採用右鍵選單設計，支援全域使用和私人訊息。方便使用者將圖片加入最愛選單。",
-    tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-    Previewlink: "https://discord.com/oauth2/authorize?client_id=1375013750305853440",
-    Githublink: "https://github.com/Dong-Chen-1031/2GifBot",
-  },
 ];
 
 // function for calculating actual text lines
